@@ -1,4 +1,5 @@
 import streamlit as st
+from config import Config
 from helpers.llm_helper import chat, stream_parser
 from dotenv import load_dotenv
 
@@ -14,9 +15,9 @@ st.title("Streamlit Ollama Chatbot")
 # sets up sidebar nav widgets
 with st.sidebar:   
     st.markdown("# Chat Options")
+    
     # widget - https://docs.streamlit.io/library/api-reference/widgets/st.selectbox
-
-    model = st.selectbox('What model would you like to use?',('llama2:7b', 'llama2:13b', 'mistral'))
+    model = st.selectbox('What model would you like to use?', Config.OLLAMA_MODELS)
 
 # checks for existing messages in session state
 # https://docs.streamlit.io/library/api-reference/session-state

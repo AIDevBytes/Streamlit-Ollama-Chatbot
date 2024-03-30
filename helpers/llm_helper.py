@@ -2,7 +2,6 @@ import ollama
 from config import Config
 
 system_prompt = Config.SYSTEM_PROMPT
-ollama_model = Config.OLLAMA_MODEL
 
 def chat(user_prompt, model, max_tokens=200, temp=0.7):
     stream = ollama.chat(
