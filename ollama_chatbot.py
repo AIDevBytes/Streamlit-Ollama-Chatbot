@@ -50,9 +50,8 @@ if user_prompt := st.chat_input("What questions do you have about the document?"
 
     last_response =  st.session_state.messages[len(st.session_state.messages)-1]['content']
 
-    # st.write(len(st.session_state.messages))
     # Display assistant response in chat message container
-    if str(last_response) != str(llm_stream):
+    if str(last_response) != str(stream_output):
         with st.chat_message("assistant"):
             st.markdown(stream_output)
         
