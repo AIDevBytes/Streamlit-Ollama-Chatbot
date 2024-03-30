@@ -1,28 +1,19 @@
-from openai import OpenAI
+import ollama
 from config import Config
 
 system_prompt = Config.SYSTEM_PROMPT
+ollama_model = Config.OLLAMA_MODEL
 
 def chat(user_prompt, model, max_tokens=200, temp=0.7):
-    client = OpenAI()
-
-    # create chat using OpenAI LLM
-    # https://platform.openai.com/docs/api-reference/chat/create
-    completion = client.chat.completions.create(
-    model=model,
-    messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content":  user_prompt}
-        ],
-        temperature=temp,
-        max_tokens=max_tokens,
-        stream=True
+    stream = ollama.chat(
+        model=model,
+        messages=[{'role': 'user', 'content': user_prompt}],
+        stream=True,
     )
 
-    return completion
+    return stream
 
 # handles stream response back from LLM
 def stream_parser(stream):
     for chunk in stream:
-        if chunk.choices[0].delta.content != None:
-            yield chunk.choices[0].delta.content
+        yield chunk['message']['content']
