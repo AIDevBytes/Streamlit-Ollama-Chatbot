@@ -6,7 +6,8 @@ system_prompt = Config.SYSTEM_PROMPT
 def chat(user_prompt, model, max_tokens=200, temp=0.7):
     stream = ollama.chat(
         model=model,
-        messages=[{'role': 'user', 'content': user_prompt}],
+        messages=[{'role': 'assistant', 'content': system_prompt},
+                  {'role': 'user', 'content': user_prompt}],
         stream=True,
     )
 
