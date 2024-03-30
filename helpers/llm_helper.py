@@ -7,7 +7,7 @@ def chat(user_prompt, model):
     stream = ollama.chat(
         model=model,
         messages=[{'role': 'assistant', 'content': system_prompt},
-                  {'role': 'user', 'content': user_prompt}],
+                  {'role': 'user', 'content': f"Model being used is {model}.{user_prompt}"}],
         stream=True,
     )
 

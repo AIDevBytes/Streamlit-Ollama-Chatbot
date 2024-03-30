@@ -5,3 +5,6 @@ This repo contains the completed code for the YouTube tutorial video <a href="#"
 ### Chatbot Features include:
 - Ability to select different Ollama models to be used by the chatbot
 - Streaming output when responding to users like ChatGPT
+
+### Ollama 
+<a href="https://ollama.com/download">Download ollama</a>
