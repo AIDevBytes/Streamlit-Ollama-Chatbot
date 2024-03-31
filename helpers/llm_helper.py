@@ -1,8 +1,6 @@
 import ollama
 from config import Config
 
-system_prompt = Config.SYSTEM_PROMPT
-
 def chat(user_prompt, model):
     ...
 
