@@ -28,7 +28,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 if user_prompt := st.chat_input("What questions do you have about the document?"):
-    # Display user prompt in chat message container
+    # Display user prompt in chat message widget
     with st.chat_message("user"):
         st.markdown(user_prompt)
 
@@ -36,7 +36,7 @@ if user_prompt := st.chat_input("What questions do you have about the document?"
     st.session_state.messages.append({"role": "user", "content": user_prompt})
 
     with st.spinner('Generating response...'):
-        # retrieves response from OpenAI
+        # retrieves response from model
         llm_stream = chat(user_prompt, model=model)
 
         # streams the response back to the screen
