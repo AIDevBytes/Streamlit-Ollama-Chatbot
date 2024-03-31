@@ -3,11 +3,11 @@ from config import Config
 from helpers.llm_helper import chat, stream_parser
 
 st.set_page_config(
-    page_title="Streamlit Ollama Chatbot",
+    page_title=Config.PAGE_TITLE,
     initial_sidebar_state="expanded"
 )
 
-st.title("Streamlit Ollama Chatbot")
+st.title(Config.PAGE_TITLE)
 
 # sets up sidebar nav widgets
 with st.sidebar:   
