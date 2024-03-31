@@ -4,7 +4,6 @@ from config import Config
 system_prompt = Config.SYSTEM_PROMPT
 
 def chat(user_prompt, model):
-    
     stream = ollama.chat(
         model=model,
         messages=[{'role': 'assistant', 'content': system_prompt},

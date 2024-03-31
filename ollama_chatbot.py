@@ -27,7 +27,7 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-if user_prompt := st.chat_input("What questions do you have about the document?"):
+if user_prompt := st.chat_input("What would you like to ask?"):
     # Display user prompt in chat message widget
     with st.chat_message("user"):
         st.markdown(user_prompt)
