@@ -4,6 +4,8 @@ This repo contains the completed code for the YouTube tutorial video <a href="#"
 
 ### Getting Starter Project Code
 
+Run the command below to clone the starter project.
+
 ```
 git clone --single-branch --branch starter_project https://github.com/DevTechBytes/Streamlit-Ollama-Chatbot.git
 ```
