@@ -1,6 +1,9 @@
 # Streamlit Ollama Chatbot
 
-This repo contains the completed code for the YouTube tutorial video <a href="#" target="_blank">Build Your Own AI Chatbot with Streamlit and Ollama: A Step-by-Step Tutorial</a>
+This repo contains the completed code for the YouTube tutorial video series:
+
+<a href="https://youtu.be/BA0656SdODU" target="_blank">Build Your Own AI Chatbot with Streamlit and Ollama: A Step-by-Step Tutorial | Part 1</a>
+<a href="https://youtu.be/vDD_L0ab-FY" target="_blank">Build Your Own AI Chatbot with Streamlit and Ollama: A Step-by-Step Tutorial | Part 2</a>
 
 ### Getting Starter Project Code
 
