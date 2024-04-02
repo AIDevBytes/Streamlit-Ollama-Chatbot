@@ -1,11 +1,7 @@
 """
-Author: Hello (World)
-llm_helper.py (c) 2024
-Desc: description
-Created:  2024-04-02T05:40:48.648Z
-Modified: !date!
+Orignal Author: DevTechBytes
+https://www.youtube.com/@DevTechBytes
 """
-
 
 import ollama
 from config import Config
