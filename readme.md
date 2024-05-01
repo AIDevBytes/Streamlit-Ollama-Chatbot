@@ -4,6 +4,13 @@ This repo contains the completed code for the YouTube tutorial video series:
 
 <a href="https://www.youtube.com/playlist?list=PL39czAYesA5ckKIohbmfL6Bq8X4JwV1Ge" target="_blank"> Build Your Own AI Chatbot with Streamlit and Ollama: A Step-by-Step Tutorial</a>
 
+### Completed Code
+
+Run the command below to clone the starter project.
+
+```
+git clone https://github.com/DevTechBytes/Streamlit-Ollama-Chatbot.git
+```
 
 ### Getting Starter Project Code
 
